@@ -51,6 +51,7 @@ holiday_hash[:winter].each do |holiday, supply|
     supplys << word 
   end
 end
+supplys
 
 end
 
