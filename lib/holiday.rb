@@ -46,7 +46,7 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
   # code here
   # remember to return the updated hash
 supplys = []
-holiday_hash[:winter]
+holiday_hash[:winter].each do ||
 end
 
 def all_winter_holiday_supplies(holiday_hash)
