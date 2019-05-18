@@ -49,6 +49,9 @@ supplys = []
 holiday_hash[:winter].each do |holiday, supply|
   supply.each do |word|
     supplys << word 
+  end
+end
+
 end
 
 def all_winter_holiday_supplies(holiday_hash)
