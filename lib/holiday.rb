@@ -45,22 +45,22 @@ end
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
   # code here
   # remember to return the updated hash
-supplys = []
-holiday_hash[:winter].each do |holiday, supply|
-  supply.each do |word|
-    supplys << word 
-  end
-end
-supplys
+
 
 end
 
 def all_winter_holiday_supplies(holiday_hash)
   # return an array of all of the supplies that are used in the winter season
+  supplys = []
+  holiday_hash[:winter].each do |holiday, supply|
+    supply.each do |word|
+      supplys << word 
+    end
+  end
+  supplys
 
 
-
-end
+  end
 
 def all_supplies_in_holidays(holiday_hash)
   # iterate through holiday_hash and print items such that your readout resembles:
