@@ -74,10 +74,11 @@ madara = []
 holiday_hash.each do |season, holiday|
   puts season.to_s.capitalize + ":"
   
-
-
-
-
+  holiday.each do |key, value|
+      madara = key.to_s.split("_")
+      puts "  " + array.map {|word| word.capitalize}.join(" ") + ": " + value.join(", ")
+    end
+  end
 end
 
 def all_holidays_with_bbq(holiday_hash)
